@@ -1,0 +1,105 @@
+ 
+<html>
+    <head>
+      <title>Hand Gestures</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+       <h3 class="btn btn-warning heading"> 
+        Hand Gestures App!
+        <br>
+        <span> &#128076; </span>
+        <span> &#128077; </span>
+        <span> &#128076; </span>
+        <span> &#128406; </span>
+        <span> &#9995; </span>
+        <span> &#129304; </span>
+      </h3>
+  
+        <br><br>
+  
+        <p style="font-size: 22px; font-family:'Courier New', Courier, monospace; letter-spacing: normal; color: red;">Take your selfie to learn its name and type!
+          <br>
+          <b style="color: yellowgreen">What Type'a Hand Gesture Are you Feeling? All of them work!</b>
+         <img src="doge-button-wow.gif"> Amazingly Horrid Hand Gesture skills!
+        </p>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12"> 
+  
+          <label> Webcam View- </label>
+  
+        <div id="camera" onclick="webcam.set()"> </div> 
+  
+        <br><br>
+  
+        <button onclick="take_Snapshot()" class="btn btn-danger"> Capture Image- OH WOAH, DON'T CAPTURE THAT.</button>
+  
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12"> 
+  
+          <label> Prediction- </label>
+
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+          <br><br>
+        
+          <button onclick="check()" class="btn btn-info"> Click me to check! My Name's Chuck! </button>
+
+          <br><br>
+
+          <button onclick="gotResult()" class="btn btn-primary"> Don't Listen to him, he's annoying. Press me, I'm gotResult. </button>
+
+          <p class="emotion_name" id="result_emotion_name"></p>
+          
+          <p class="emoji" id="update_emoji"></p>
+  
+        </div>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+  
+          <label> Snapshot- </label>
+
+
+          <div id="camera"> </div> 
+  
+        <br><br>
+  
+        <button onclick="check()" class="btn btn-success"> Predict Emotion - You prob don't wanna but do it anyway. </button>
+  
+        <br><br>
+
+        <button onclick="speak()" class="btn btn-warning"> My name's "Speak" and I'ma singer!</button>
+        </div>
+        
+        <div class="col-md-4 col-sm-12 col-xs-12">
+  
+          <br><br>
+          <p id="quote" style="color: green; font-size: 27px;"></p>
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
